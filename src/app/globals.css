@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+* {
+  font-family: "Roboto";
+  margin: 0;
+  padding: 0;
+  /* box-sizing: content-box; */
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+}
+
+.scrollbar-w-2::-webkit-scrollbar {
+  width: 0.25rem;
+  height: 0.25rem;
+}
+
+.scrollbar-track-blue-lighter::-webkit-scrollbar-track {
+  --bg-opacity: 1;
+  background-color: #f7fafc;
+  background-color: rgba(247, 250, 252, var(--bg-opacity));
+}
+
+.scrollbar-thumb-blue::-webkit-scrollbar-thumb {
+  --bg-opacity: 0.3;
+  background-color: rgb(10, 102, 194);
+  background-color: rgba(10, 102, 194, var(--bg-opacity));
+}
+
+.scrollbar-thumb-rounded::-webkit-scrollbar-thumb {
+  border-radius: 0.25rem;
+}
+
+/* lib */
+.border-red {
+  border: 4px solid red;
+}
+
+.border-pink {
+  border: 4px solid pink;
+}
+
+.border-blue {
+  border: 4px solid blue;
+}
+
+.border-green {
+  border: 4px solid green;
+}
+
+.border-black {
+  border: 4px solid black;
+}
+
+.border-gold {
+  border: 4px solid gold;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-jc-e {
+  justify-content: flex-end;
+}
+
+.flex-jc-s {
+  justify-content: flex-start;
+}
+
+.flex-jc-c {
+  justify-content: center;
+}
+
+.flex-jc-sb {
+  justify-content: space-between;
+}
+
+.flex-ai-c {
+  align-items: center;
+}
+
+.height-100p {
+  height: 100%;
+}
+.height-70p {
+  height: 70%;
+}
+.height-50p {
+  height: 50%;
+}
+.block {
+  display: block;
+}
